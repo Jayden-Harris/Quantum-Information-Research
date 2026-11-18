@@ -1,0 +1,30 @@
+{
+  "experiment_id": "ghz_qx_emulator",
+  "experiment_type": "Three-qubit GHZ state",
+  "backend": "QX emulator",
+  "shots_requested": 2000,
+  "shots_returned": 2000,
+  "qubits": 3,
+  "classical_bits": 3,
+  "initial_state": "|000>",
+  "prepared_state": "(|000> + |111>) / sqrt(2)",
+  "circuit": [
+    "H(0)",
+    "CX(0,1)",
+    "CX(0,2)",
+    "Measure(0,0)",
+    "Measure(1,1)",
+    "Measure(2,2)"
+  ],
+  "measurement_basis": "ZZZ",
+  "expected_probabilities": {
+    "000": 0.5,
+    "111": 0.5
+  },
+  "measurement_counts": {
+    "111": 1040,
+    "000": 960
+  },
+  "retrieved_at_utc": "2026-11-18T21:49:00.444723+00:00",
+  "binary_string_length": 6000
+}

@@ -1,0 +1,20 @@
+{
+  "experiment_id": "bell_state_001",
+  "experiment_type": "Bell state",
+  "backend": "QX emulator",
+  "shots_requested": 2000,
+  "shots_returned": 2000,
+  "qubits": 2,
+  "circuit": [
+    "H(0)",
+    "CX(0,1)",
+    "Measure(0,0)",
+    "Measure(1,1)"
+  ],
+  "measurement_counts": {
+    "11": 1000,
+    "00": 1000
+  },
+  "retrieved_at_utc": "2026-11-18T21:41:24.153941+00:00",
+  "binary_string_length": 4000
+}

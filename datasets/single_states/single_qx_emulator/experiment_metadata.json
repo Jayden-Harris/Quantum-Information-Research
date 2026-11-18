@@ -1,0 +1,25 @@
+{
+  "experiment_id": "single_qx_emulator",
+  "experiment_type": "Single-qubit superposition",
+  "backend": "QX emulator",
+  "shots_requested": 2000,
+  "shots_returned": 2000,
+  "qubits": 1,
+  "classical_bits": 1,
+  "initial_state": "|0>",
+  "circuit": [
+    "H(0)",
+    "Measure(0,0)"
+  ],
+  "measurement_basis": "Z",
+  "expected_probabilities": {
+    "0": 0.5,
+    "1": 0.5
+  },
+  "measurement_counts": {
+    "0": 996,
+    "1": 1004
+  },
+  "retrieved_at_utc": "2026-11-18T21:47:16.043687+00:00",
+  "binary_string_length": 2000
+}
