@@ -102,44 +102,6 @@ Order-dependent methods, such as autocorrelation, transition analysis, sequentia
 
 The distinction between acquisition order and physical chronology will be maintained throughout the project.
 
-## Data Collection and Preservation
-
-Raw measurement data is treated as the primary experimental record.
-
-Each experiment is stored separately, with datasets organised by circuit family and execution platform.
-
-A typical structure is:
-
-```text
-datasets/
-├── single_states/
-│   └── single_qx_emulator/
-│       ├── binary_string.txt
-│       ├── measurement_records.json
-│       └── experiment_metadata.json
-│
-├── entangled_states/
-│   ├── bell/
-│   │   └── qx_emulator/
-│   └── ghz/
-│       └── ghz_qx_emulator/
-│
-└── phase_experiments/
-```
-
-Each execution should preserve, where available:
-
-- Individual measurement records.
-- Concatenated binary representation.
-- Circuit definition and gate parameters.
-- Backend and hardware identification.
-- Requested and returned shot counts.
-- Job identifiers and execution metadata.
-- Retrieval timestamp.
-- Expected theoretical outcome probabilities.
-
-Raw datasets should not be overwritten by subsequent executions or analytical transformations. Derived data and analysis results should be stored separately.
-
 ## Statistical Controls and Validation
 
 Binary measurement records are a simple representation, and patterns will naturally occur as dataset size increases.
