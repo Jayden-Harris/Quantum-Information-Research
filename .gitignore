@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Downloaded experimental datasets
+datasets/external_photon_timetags/*/Quantumdata/
+datasets/external_photon_timetags/*/chronological_events/
+
+# Generated analysis outputs
+*.png
+*.pdf
+g2_detector_*.txt
+detector_timing_dependence.csv
